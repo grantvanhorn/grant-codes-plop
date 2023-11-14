@@ -1,0 +1,16 @@
+import { renderHook } from '@testing-library/react';
+import use{{properCase hookName}} from './use{{properCase hookName}}';
+
+describe('use{{properCase hookName}}', () => {
+  it('should render with an empty string as its value', () => {
+    const hookRenderResult = renderHook(use{{properCase hookName}});
+
+    const {
+      result: {
+        current: { {{camelCase hookName}} },
+      },
+    } = hookRenderResult;
+
+    expect({{camelCase hookName}}).toBe('');
+  });
+});
